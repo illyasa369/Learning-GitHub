@@ -3,3 +3,5 @@ This Linux machine has cloned the repository through SSH after adding a SSH Key.
 
 This line is an addition from a seperate branch (testBranching). If you are reading this from the main branch of 
 this repository, the branch has been merged successfully.
+
+Currently testing merge conflicts.
