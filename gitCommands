@@ -44,5 +44,7 @@ git branch BRANCH || Creates a new branch
 git checkout BRANCH || Switches local branch to the new branch
 git push --set-upstream origin BRANCH || Sets the remote branch to be tracked
 
+# Deleting branches
 git branch -d BRANCH || Deletes a branch locally
 git push origin --delete BRANCH || Deletes the branch remotely
+git remote prune origin || Clean up deleted remote branches.
