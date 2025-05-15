@@ -1,0 +1,30 @@
+git config --global user.name "userName"
+git config --global user.name 
+
+git config --global user.email "userEmail"
+git config --global user.email
+
+
+ssh-keygen -t ed25519 -C "userEmail"
+Add new SSH Key to GitHub account via GitHub website.
+Clone using sshURL
+
+
+git clone repositoryURL
+
+
+git add/rm FILE || Moves FILE to staging area to be committed and pushed.
+git restore --staged FILE || Returns staged file to the working directory.
+
+git commit -m "COMMIT MESSAGE"
+
+git push 
+git pull || Always use after pushing to keep local repository up to date with remote repository.
+
+git status
+
+git remote -v || Shows current repository that is linked to your local project.
+git remote set-url origing repositoryURL || Update remote repository linked to your local project.
+
+rm -rf .git || Removes git repository but keeps its files.
+rm -rf [FOLDER] || Removes git repository.
