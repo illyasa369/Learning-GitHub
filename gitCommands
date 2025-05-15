@@ -51,3 +51,9 @@ git remote prune origin || Clean up deleted remote branches.
 
 # Updating a branch with any changes from main
 git pull origin main
+
+# Merging
+1. Switch to main branch
+2. Pull from main to ensure it is up to date.
+git merge BRANCH 
+git push origin main
