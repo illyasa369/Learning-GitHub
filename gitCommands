@@ -4,6 +4,7 @@ git config --global user.name
 git config --global user.email "userEmail"
 git config --global user.email
 
+git config --global core.autocrlf true || Normalise line endings 
 
 # Setting up SSH keys 
 ssh-keygen -t ed25519 -C "userEmail"
@@ -30,7 +31,7 @@ git status
 
 # Viewing current repository, updating a repository
 git remote -v || Shows current repository that is linked to your local project.
-git remote set-url origing repositoryURL || Update remote repository linked to your local project.
+git remote set-url origin repositoryURL || Update remote repository linked to your local project.
 
 
 # Removing a repository
@@ -44,4 +45,4 @@ git checkout BRANCH || Switches local branch to the new branch
 git push --set-upstream origin BRANCH || Sets the remote branch to be tracked
 
 git branch -d BRANCH || Deletes a branch locally
-git push origin --delete revert-branch-name || Deletes the branch remotely
+git push origin --delete BRANCH || Deletes the branch remotely
