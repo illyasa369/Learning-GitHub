@@ -5,26 +5,43 @@ git config --global user.email "userEmail"
 git config --global user.email
 
 
+# Setting up SSH keys 
 ssh-keygen -t ed25519 -C "userEmail"
 Add new SSH Key to GitHub account via GitHub website.
 Clone using sshURL
 
-
+# Cloning a repository
 git clone repositoryURL
 
-
+# Adding/Removing files from a repository, restoring the file
 git add/rm FILE || Moves FILE to staging area to be committed and pushed.
 git restore --staged FILE || Returns staged file to the working directory.
 
+# Committing
 git commit -m "COMMIT MESSAGE"
 
-git push 
+# Pushing changes
+git push
+
+# Pulling changes
 git pull || Always use after pushing to keep local repository up to date with remote repository.
 
 git status
 
+# Viewing current repository, updating a repository
 git remote -v || Shows current repository that is linked to your local project.
 git remote set-url origing repositoryURL || Update remote repository linked to your local project.
 
+
+# Removing a repository
 rm -rf .git || Removes git repository but keeps its files.
 rm -rf [FOLDER] || Removes git repository.
+
+# Branching
+git branch || Shows the current branch
+git branch BRANCH || Creates a new branch
+git checkout BRANCH || Switches local branch to the new branch
+git push --set-upstream origin BRANCH || Sets the remote branch to be tracked
+
+git branch -d BRANCH || Deletes a branch locally
+git push origin --delete revert-branch-name || Deletes the branch remotely
