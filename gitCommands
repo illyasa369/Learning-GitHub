@@ -63,3 +63,13 @@ git log --oneline || Shows commit logs with oneline.
 git tag [TAGNAME] [COMMITHASH] || Tags the specified commit.
 git push origin TAGNAME || Pushes tags to remote repository.
 
+#Rebasing
+git checkout feature-branch
+git rebase main 
+
+Conflicts during rebasing:
+Rebasing will pause until the conflict has been resolved.
+Once fixed:
+git add file || Add the file with the changes.
+git rebase --continue || Git continues with the rebase.
+git push --force-with-lease || Push safely if remote is unchanged, fails if not.
