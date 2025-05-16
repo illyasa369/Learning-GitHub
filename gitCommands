@@ -73,3 +73,16 @@ Once fixed:
 git add file || Add the file with the changes.
 git rebase --continue || Git continues with the rebase.
 git push --force-with-lease || Push safely if remote is unchanged, fails if not.
+
+# Squashing Commits
+git rebase -i HEAD~n || Interactively rebase to the last n commits.
+
+An editor will open:
+1. Keep first commit as pick.
+2. All remaining commits to be squashed should be changed to squash.
+3. Save and close editor.
+
+A second editor will open allowing you to refactor the commit message.
+1. Keep the first commit message.
+2. Remove or comment out the additional commit messages.
+3. Save and close editor.
