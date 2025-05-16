@@ -1,7 +1,6 @@
 # My First Repo
 ## This repo will be used to learn GitHub
-This repo will include different experiments of pushing, pulling, branching, merging and many more.
-
+This repo will include different experiments of pushing, pulling, branching, merging and many more.<br></br>
 
 Updates:
 
