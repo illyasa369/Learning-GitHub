@@ -7,7 +7,7 @@ This repo will include different experiments of pushing, pulling, branching, mer
 Guide on git commands. <br></br>
 
 ### - .gitignore.md
-Guide on .gitignore files.
+Guide on .gitignore files. <br></br>
 
 ### - pushedFromLinux
 File created locally on a linux machine, pushed to remote, altered via a seperate branch and merged to the main branch.
