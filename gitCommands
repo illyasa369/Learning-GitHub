@@ -15,7 +15,8 @@ Clone using sshURL
 git clone repositoryURL
 
 # diff command
-git diff FILE || Shows the difference of the file content in the local and remote repository.
+git diff FILE || Compares the difference between an  unstaged file with the last commit.
+git diff --staged || Compares the difference between a staged file and the last commit.
 
 # Adding/Removing files from a repository, restoring the file
 git add/rm FILE || Moves FILE to staging area to be committed and pushed.
@@ -46,6 +47,7 @@ git branch || Shows the current branch
 git branch BRANCH || Creates a new branch
 git checkout BRANCH || Switches local branch to the new branch
 git push --set-upstream origin BRANCH || Sets the remote branch to be tracked
+git switch BRANCH || Switches safely to a branch.
 
 # Deleting branches
 git branch -d BRANCH || Deletes a branch locally
@@ -66,7 +68,7 @@ git log --oneline || Shows commit logs with oneline.
 git tag [TAGNAME] [COMMITHASH] || Tags the specified commit.
 git push origin TAGNAME || Pushes tags to remote repository.
 
-#Rebasing
+# Rebasing
 git checkout feature-branch
 git rebase main 
 
@@ -89,3 +91,11 @@ A second editor will open allowing you to refactor the commit message.
 1. Keep the first commit message.
 2. Remove or comment out the additional commit messages.
 3. Save and close editor.
+
+# Commands for Viewing History
+git log || Shows commit history.
+git log --online --graph --all
+git show [COMMIT] || Shows a specific commit.
+
+git blame [FILE] || Show who last changed each line in a file.
+git reflog || View local HEAD history.
