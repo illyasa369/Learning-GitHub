@@ -4,7 +4,7 @@ This repo will include different experiments of pushing, pulling, branching, mer
 
 ## What you'll find here:
 ### GitHub Guide
-Folder containing guides on GitHub's workflow, best practices and helpful information.
+Folder containing guides on GitHub's workflow, best practices and helpful information.<br></br>
 
 ### gitCommands
 Guide on git commands. <br></br>
