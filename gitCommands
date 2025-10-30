@@ -99,3 +99,22 @@ git show [COMMIT] || Shows a specific commit.
 
 git blame [FILE] || Show who last changed each line in a file.
 git reflog || View local HEAD history.
+
+# Stash and Pop
+git stash || Adds uncommited changes to a stash.
+git stash list || View all stashes.
+git stash apply || Reapplys the stash and keeps the stash.
+
+git pop || Reapplys the stash and deletes the stash.
+
+Use case: Switching branches mid task.
+
+# Reset, revert and cherry-pick.
+git reset || Moves branch pointer backwards to the last commit.
+3 Levels: Soft (Keeps changes staged), Mixed (Unstages your changes) and Hard (Resets staging area and working directory to match the previous commit).
+
+git revert || Creates a new commit which undoes another.
+
+git cherry-pick || Applys a single commit from another branch to the current working branch.
+
+
