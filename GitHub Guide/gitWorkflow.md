@@ -1,4 +1,4 @@
-# Typical Git workflow
+# Typical Git Workflow
 
 - Pull latest main or clone repo.
 

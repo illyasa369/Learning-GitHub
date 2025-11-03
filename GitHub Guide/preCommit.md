@@ -1,4 +1,4 @@
-Pre-Commit and Automation
+# Pre-Commit and Automation
 
 - Run linters/tests before committing to prevent broken code entering the repo.
 
