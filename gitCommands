@@ -34,9 +34,9 @@ git pull || Always use after pushing to keep local repository up to date with re
 git status
 
 # Viewing current repository, updating a repository
-git remote -v || Shows current repository that is linked to your local project.
+git remote add origin repositoryURL || Links the local repository to the remote repository.
+git remote -v || Shows remote repository that is linked to your local project.
 git remote set-url origin repositoryURL || Update remote repository linked to your local project.
-
 
 # Removing a repository
 rm -rf .git || Removes git repository but keeps its files.
@@ -59,9 +59,9 @@ git pull origin main
 
 # Merging
 1. Switch to main branch
-git pull origin main ||  Pull from main to ensure it is up to date.
+git pull origin main ||  Pull from remote to main to ensure it is up to date.
 git merge BRANCH || Merge feature branch in to current branch (main).
-git push origin main || Push to remote main.
+git push origin main || Push to remote.
 
 # Tags
 git log --oneline || Shows commit logs with oneline.
