@@ -110,11 +110,16 @@ git pop || Reapplys the stash and deletes the stash.
 Use case: Switching branches mid task.
 
 # Reset, revert and cherry-pick.
-git reset || Moves branch pointer backwards to the last commit.
-3 Levels: Soft (Keeps changes staged), Mixed (Unstages your changes) and Hard (Resets staging area and working directory to match the previous commit).
+git reset --[soft|mixed|hard] HEAD~1 || Moves branch pointer backwards to the last commit.
+3 Levels: Soft (Undoes a commit, stages the changes), Mixed (Keeps changes, unstages the file) and Hard (Resets staging area and working directory to match the previous commit).
 
-git revert || Creates a new commit which undoes another.
+git revert || Undoes a commit that has been pushed to main by pushing a new commit.
 
 git cherry-pick || Applys a single commit from another branch to the current working branch.
 
+# Undoing in Git
+git restore [FILE] || Undoes changes to a file that have not been staged.
 
+To undo changes to a file that has been staged use the following commands in order:
+git restore --staged [FILE]
+git restore [FILE]
