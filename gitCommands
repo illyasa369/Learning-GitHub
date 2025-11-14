@@ -88,9 +88,8 @@ An editor will open:
 3. Save and close editor.
 
 A second editor will open allowing you to refactor the commit message.
-1. Keep the first commit message.
-2. Remove or comment out the additional commit messages.
-3. Save and close editor.
+- Include a new commit message at the beginning as the commit message for the squash or use the first commit message by
+  saving and closing the editor.
 
 # Commands for Viewing History
 git log || Shows commit history.
@@ -102,6 +101,7 @@ git reflog || View local HEAD history.
 
 # Stash and Pop
 git stash || Adds uncommited changes to a stash.
+git stash -m "" || Allows you to add a description to the stash entry - easy to identify if multiple stash entries are in the stash.
 git stash list || View all stashes.
 git stash apply || Reapplys the stash and keeps the stash.
 
@@ -113,7 +113,8 @@ Use case: Switching branches mid task.
 git reset --[soft|mixed|hard] HEAD~1 || Moves branch pointer backwards to the last commit.
 3 Levels: Soft (Undoes a commit, stages the changes), Mixed (Keeps changes, unstages the file) and Hard (Resets staging area and working directory to match the previous commit).
 
-git revert || Undoes a commit that has been pushed to main by pushing a new commit.
+git revert HEAD || Undoes a commit that has been pushed to main by pushing a new commit.
+Use git push to finalise.
 
 git cherry-pick || Applys a single commit from another branch to the current working branch.
 
