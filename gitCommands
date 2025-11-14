@@ -107,7 +107,7 @@ git stash -m "" || Allows you to add a description to the stash entry - easy to 
 git stash list || View all stashes.
 git stash apply || Reapplys the stash and keeps the stash.
 
-git pop || Reapplys the stash and deletes the stash.
+git stash pop || Reapplys the stash and deletes the stash.
 
 Use case: Switching branches mid task.
 
@@ -118,7 +118,7 @@ git reset --[soft|mixed|hard] HEAD~1 || Moves branch pointer backwards to the la
 git revert HEAD || Undoes a commit that has been pushed to main by pushing a new commit.
 Use git push to finalise.
 
-git cherry-pick || Applys a single commit from another branch to the current working branch.
+git cherry-pick [COMMIT HASH] || Applys a single commit from another branch to the current working branch.
 
 # Undoing in Git
 Note: Undoing changes to files in git can only be done to files that are tracked by git.
