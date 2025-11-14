@@ -91,6 +91,8 @@ A second editor will open allowing you to refactor the commit message.
 - Include a new commit message at the beginning as the commit message for the squash or use the first commit message by
   saving and closing the editor.
 
+Finally, use git push to push this change to remote.
+
 # Commands for Viewing History
 git log || Shows commit history.
 git log --online --graph --all
@@ -119,6 +121,8 @@ Use git push to finalise.
 git cherry-pick || Applys a single commit from another branch to the current working branch.
 
 # Undoing in Git
+Note: Undoing changes to files in git can only be done to files that are tracked by git.
+
 git restore [FILE] || Undoes changes to a file that have not been staged.
 
 To undo changes to a file that has been staged use the following commands in order:
