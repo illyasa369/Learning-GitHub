@@ -25,6 +25,17 @@ git restore --staged FILE || Returns staged file to the working directory.
 # Committing
 git commit -m "COMMIT MESSAGE"
 
+# Amending Commits messages
+git commit -m --amend "COMMIT MESSAGE." || Supplies a new commit message for the latest commit.
+
+# Amending Commit contents
+git add [FILE]
+git commit --amend || Includes the file added to the last commit.
+
+# Amending commits pushed to remote 
+If a change has been pushed to the remote repository force pushing is required after amending.
+git push --force-with-lease
+
 # Pushing changes
 git push
 
