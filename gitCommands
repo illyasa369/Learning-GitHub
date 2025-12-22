@@ -8,8 +8,7 @@ git config --global core.autocrlf true || Normalise line endings
 
 # Setting up SSH keys 
 ssh-keygen -t ed25519 -C "userEmail"
-Add new SSH Key to GitHub account via GitHub website.
-Clone using sshURL
+Copy the content of the .pub file and add the SSH Key to GitHub account via GitHub website.
 
 # Cloning a repository
 git clone repositoryURL
