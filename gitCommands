@@ -101,7 +101,7 @@ A second editor will open allowing you to refactor the commit message.
 - Include a new commit message at the beginning as the commit message for the squash or use the first commit message by
   saving and closing the editor.
 
-Finally, use git push to push this change to remote.
+Finally, use git push --force-with-lease to push this change to remote.
 
 # Commands for Viewing History
 git log || Shows commit history.
